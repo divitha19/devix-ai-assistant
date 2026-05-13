@@ -1,11 +1,10 @@
 import streamlit as st
 from agents.main_agent import ask_agent
-from voice.speech_to_text import listen
 from rag.vector_store import create_vector_store
 
-st.set_page_config(page_title="Jarvex AI")
+st.set_page_config(page_title="Devix AI")
 
-st.title("🤖 Jarvex AI Voice Assistant")
+st.title("🤖 Devix AI Voice Assistant")
 
 uploaded_file = st.file_uploader(
     "Upload PDF",
@@ -29,11 +28,3 @@ if st.button("Ask AI"):
     st.write(answer)
 
 
-if st.button("🎤 Voice Command"):
-    voice_query = listen()
-
-    st.write("You Said:", voice_query)
-
-    answer = ask_agent(voice_query)
-
-    st.write(answer)
