@@ -1,0 +1,15 @@
+streamlit
+langchain
+langchain-community
+langchain-core
+langchain-groq
+faiss-cpu
+pypdf
+sentence-transformers
+python-dotenv
+SpeechRecognition
+pyttsx3
+pyaudio
+openai-whisper
+langgraph
+requests
