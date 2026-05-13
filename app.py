@@ -1,7 +1,6 @@
 import streamlit as st
 from agents.main_agent import ask_agent
 from voice.speech_to_text import listen
-from voice.text_to_speech import speak
 from rag.vector_store import create_vector_store
 
 st.set_page_config(page_title="Jarvex AI")
@@ -29,7 +28,6 @@ if st.button("Ask AI"):
     st.write("### AI Response")
     st.write(answer)
 
-    speak(answer)
 
 if st.button("🎤 Voice Command"):
     voice_query = listen()
@@ -39,5 +37,3 @@ if st.button("🎤 Voice Command"):
     answer = ask_agent(voice_query)
 
     st.write(answer)
-
-    speak(answer)
