@@ -9,7 +9,5 @@ sentence-transformers
 python-dotenv
 SpeechRecognition
 pyttsx3
-pyaudio
-openai-whisper
 langgraph
 requests
