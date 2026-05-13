@@ -7,7 +7,4 @@ faiss-cpu
 pypdf
 sentence-transformers
 python-dotenv
-SpeechRecognition
-pyttsx3
-langgraph
 requests
